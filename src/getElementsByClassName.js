@@ -9,8 +9,6 @@ var getElementsByClassName = function(target){
 
   var search = function(node){
     if (node.classList && node.classList.contains(target)){
-      console.log(node.classList);
-      console.log(node.classList.contains(target));
       result.push(node);
     }
     if (node.childNodes){
@@ -20,6 +18,5 @@ var getElementsByClassName = function(target){
     }
   };
   search(document.body);
-  console.log(result);
   return result;
 };
